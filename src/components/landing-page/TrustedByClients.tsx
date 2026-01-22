@@ -15,17 +15,17 @@ const TrustedByClients: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white pt-10 pb-8 md:pb-12 flex flex-col items-center gap-10 md:gap-16">
-      <h2 className="font-urbanist font-semibold text-[24px] md:text-[40px] lg:text-[48px] leading-[1.2] md:leading-[52px] text-[#57BE8B] text-center px-4">
+    <section className="bg-white py-10 flex flex-col items-center gap-y-8 sm:gap-y-5">
+      <h2 className="font-urbanist font-medium text-[24px] md:text-[40px] leading-[1.2] md:leading-[52px] text-[#57BE8B] text-center px-4">
         Trusted By 100+ Clients
       </h2>
-      <div className="flex flex-wrap justify-center items-center gap-10 lg:gap-[51.5px] px-6 max-w-7xl mx-auto">
+      <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 lg:gap-[51.5px] px-6 max-w-7xl mx-auto">
         {logos.map((logo, index) => (
           <img 
             key={index} 
             src={logo.src} 
             alt={logo.alt} 
-            className="h-[32px] w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+            className="h-[24px] lg:h-[32px] w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
           />
         ))}
       </div>
