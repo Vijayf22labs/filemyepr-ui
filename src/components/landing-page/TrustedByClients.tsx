@@ -15,7 +15,7 @@ const TrustedByClients: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white pt-12 md:pt-24 pb-8 md:pb-12 flex flex-col items-center gap-10 md:gap-16">
+    <section className="bg-white pt-10 pb-8 md:pb-12 flex flex-col items-center gap-10 md:gap-16">
       <h2 className="font-urbanist font-semibold text-[24px] md:text-[40px] lg:text-[48px] leading-[1.2] md:leading-[52px] text-[#57BE8B] text-center px-4">
         Trusted By 100+ Clients
       </h2>

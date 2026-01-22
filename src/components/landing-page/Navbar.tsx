@@ -7,14 +7,11 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      {/* Top dark grey strip */}
-      <div className="fixed top-0 left-0 right-0 w-full h-[2px] bg-[#353535] z-[60]"></div>
-      
-      <nav className="fixed top-[2px] left-0 right-0 bg-white z-50 border-b border-[#EBEBEB] h-[72px] lg:h-[96px]">
+      <nav className="sticky top-[2px] left-0 right-0 bg-white z-50 border-b border-[#EBEBEB] h-[72px] lg:h-[96px]">
         <div className="w-full h-full flex items-center justify-center">
-          <div className="w-full max-w-[1920px] h-full flex items-center justify-between px-6 md:px-10 lg:px-16 2xl:px-[100px]">
+          <div className="w-full max-w-[1200px] mx-auto h-full flex items-center justify-between px-10">
             {/* Logo Section */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <img 
                 src={navLogo} 
                 alt="FileMyEPR Logo" 
@@ -40,7 +37,7 @@ const Navbar: React.FC = () => {
                 >
                   Resources
                 </span>
-                <ChevronDown size={14} className="text-[#353535] group-hover:text-[#58BD8A]" />
+                <ChevronDown className="size-5 text-[#A2A2A2] group-hover:text-[#58BD8A]" />
               </div>
               <div className="flex items-center gap-1 cursor-pointer hover:text-[#58BD8A] transition-colors group">
                 <span 
@@ -49,7 +46,7 @@ const Navbar: React.FC = () => {
                 >
                   Company
                 </span>
-                <ChevronDown size={14} className="text-[#353535] group-hover:text-[#58BD8A]" />
+                <ChevronDown className="size-5 text-[#A2A2A2] group-hover:text-[#58BD8A]" />
               </div>
               <a 
                 href="#" 
@@ -70,7 +67,7 @@ const Navbar: React.FC = () => {
               </button>
               
               <div className="hidden sm:block">
-                <button className="bg-[#57BE8B] text-white w-[117px] h-[56px] px-8 py-4 rounded-[6px] font-semibold hover:opacity-90 transition-all whitespace-nowrap text-[16px] flex items-center justify-center">
+                <button className="bg-[#57BE8B] text-white w-[117px] h-[56px] px-8 py-4 rounded-[6px] font-semibold hover:opacity-90 transition-all whitespace-nowrap text-[16px] lg:text-[20px] flex items-center justify-center">
                   Login
                 </button>
               </div>
@@ -88,7 +85,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Navigation Sidebar/Drawer */}
         {isMenuOpen && (
-          <div className="fixed inset-0 top-[74px] lg:top-[98px] bg-white z-[45] lg:hidden animate-in fade-in slide-in-from-right duration-300">
+          <div className="fixed inset-0 top-[74px] lg:top-[98px] bg-white z-45 lg:hidden animate-in fade-in slide-in-from-right duration-300">
             <div className="flex flex-col p-6 gap-6 h-full overflow-y-auto">
               <a 
                 href="#" 
