@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="max-w-[1200px] mx-auto">
+    <div className="max-w-[1920px] mx-auto">
       <Navbar />
       <div>
         <Hero />

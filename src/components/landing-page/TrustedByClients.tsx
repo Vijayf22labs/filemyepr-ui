@@ -16,7 +16,7 @@ const TrustedByClients: React.FC = () => {
 
   return (
     <section className="bg-white py-10 flex flex-col items-center gap-y-8 sm:gap-y-5">
-      <h2 className="font-urbanist font-medium text-[24px] md:text-[40px] leading-[1.2] md:leading-[52px] text-[#57BE8B] text-center px-4">
+      <h2 className="font-urbanist font-medium text-[24px] md:text-[36px] leading-[1.2] md:leading-[52px] text-[#57BE8B] text-center px-4">
         Trusted By 100+ Clients
       </h2>
       <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 lg:gap-[51.5px] px-6 max-w-7xl mx-auto">

@@ -10,9 +10,9 @@ const WhoAreWe: React.FC = () => {
   ];
 
   return (
-    <section className="flex items-center justify-center px-6 bg-[#F9FAFB] overflow-hidden py-10">
+    <section className="flex items-center justify-center bg-[#F9FAFB] overflow-hidden py-10 px-[100px]">
       <div 
-        className="max-w-[1520px] w-full mx-auto bg-[#F8F9FA] rounded-[20px] relative overflow-hidden flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
+        className="bg-[#F8F9FA] w-full rounded-[20px] relative overflow-hidden flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
       >
         {/* Decorative Background Image - Absolute positioned to touch edges */}
         <div>
@@ -37,9 +37,9 @@ const WhoAreWe: React.FC = () => {
               </div>
 
               {/* Text Content */}
-              <div className="w-full lg:max-w-[500px] flex flex-col gap-6 -mt-4 lg:ml-8">
+              <div className="w-full lg:max-w-[600px] flex flex-col gap-6 -mt-4 lg:ml-8">
                 <div className="flex flex-col gap-2">
-                  <h2 className="text-[#57BE8B] font-urbanist font-medium text-2xl md:text-3xl lg:text-[36px] leading-tight">
+                  <h2 className="text-[#57BE8B] font-urbanist font-medium text-2xl md:text-[36px] leading-tight">
                     Who are we
                   </h2>
                   <p className="text-[#4F4F4F] font-urbanist text-sm md:text-base font-medium">
@@ -51,10 +51,10 @@ const WhoAreWe: React.FC = () => {
                   <h3 className="text-[#1A1A1A] font-urbanist font-medium text-lg md:text-xl leading-tight">
                     India's Pioneer in Digital Solutions for EPR Compliance
                   </h3>
-                  <p className="text-[#4F4F4F] font-urbanist text-sm md:text-base leading-relaxed">
+                  <p className="text-[#4F4F4F] font-urbanist text-sm md:text-xl leading-relaxed">
                     We are a team industry experts delivering comprehensive EPR compliance solutions across multiple material streams, including plastic, e-waste, metal, glass, and paper. Our technology-driven platform provides audit-ready, reliable compliance support tailored to evolving Indian regulations.
                   </p>
-                  <p className="text-[#4F4F4F] font-urbanist text-sm md:text-base leading-relaxed">
+                  <p className="text-[#4F4F4F] font-urbanist text-sm md:text-xl leading-relaxed">
                     By collaborating with registered recyclers nationwide and integrating deep regulatory expertise, we ensure transparent target fulfilment, reduced compliance risks, and sustained alignment with national EPR frameworks.
                   </p>
                 </div>
@@ -65,7 +65,7 @@ const WhoAreWe: React.FC = () => {
 
 
         {/* Stats Section */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-10 pb-10 z-10">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-10 pb-10 z-10 mt-3.5">
           {stats.map((stat, index) => (
             <div 
               key={index} 

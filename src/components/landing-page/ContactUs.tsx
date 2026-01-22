@@ -49,7 +49,7 @@ const ContactUs: React.FC = () => {
           >
             {/* Form Header */}
             <div className="mb-6">
-              <h2 className="text-[#57BE8B] font-urbanist font-medium text-3xl md:text-4xl mb-1">
+              <h2 className="text-[#57BE8B] font-urbanist font-medium text-3xl md:text-[36px] mb-1">
                 Contact Us
               </h2>
               <p className="text-[#4F4F4F] font-urbanist text-base">

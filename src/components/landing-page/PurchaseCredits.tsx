@@ -27,7 +27,7 @@ const PurchaseCredits: React.FC = () => {
       <div className="bg-white flex flex-col gap-6">
         {/* Header */}
         <div className="flex flex-col items-center justify-center gap-3">
-          <h2 className="text-[#57BE8B] font-urbanist font-medium text-center" style={{ fontSize: '40px', lineHeight: '48px', letterSpacing: '0%' }}>
+          <h2 className="text-[#57BE8B] font-urbanist font-medium text-center" style={{ fontSize: '36px', lineHeight: '48px', letterSpacing: '0%' }}>
             Purchase Credits
           </h2>
           <p className="text-[#1A1A1A] font-urbanist text-base md:text-lg text-opacity-80 text-center">

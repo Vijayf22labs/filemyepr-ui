@@ -41,7 +41,7 @@ const WhyChooseUs: React.FC = () => {
       >
         {/* Header */}
         <div className="flex flex-col items-center justify-center gap-3 pb-12 px-10">
-          <h2 className="text-[#57BE8B] font-urbanist font-medium text-3xl md:text-4xl lg:text-[40px] text-center">
+          <h2 className="text-[#57BE8B] font-urbanist font-medium text-3xl md:text-[36px] text-center">
             Why Choose us as your compliance partner?
           </h2>
           <p className="text-[#1A1A1A] font-urbanist text-base md:text-lg text-center text-opacity-80">
@@ -57,7 +57,7 @@ const WhyChooseUs: React.FC = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="relative z-20 py-10 flex flex-col w-[400px] bg-white border-0 shrink-0"
+              className="relative z-20 py-10 flex flex-col flex-1 bg-white border-0 shrink-0"
               style={{ backgroundColor: card.bgColor }}
             >
               {/* Icon */}
@@ -73,7 +73,7 @@ const WhyChooseUs: React.FC = () => {
               </div>
 
               {/* Content */}
-              <div className="flex flex-col gap-2 flex-1 px-4 text-center mt-[-160px]">
+              <div className="flex flex-col gap-2 flex-1 px-4 text-center mt-[-200px]">
                 <h3 
                   className="font-urbanist font-semibold text-2xl md:text-3xl leading-tight text-center"
                   style={{ color: card.titleColor }}
