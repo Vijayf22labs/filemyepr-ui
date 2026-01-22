@@ -40,7 +40,7 @@ const PurchaseCredits: React.FC = () => {
           {steps.map((step, index) => (
             <React.Fragment key={index}>
               {/* Card */}
-              <div className="w-[321.33px] h-[304px] bg-white border border-[#EEF9F4] rounded-xl p-6 flex flex-col items-center gap-8">
+              <div className="w-[321.33px] h-[304px] bg-white border border-[#EEF9F4] rounded-xl p-6 flex flex-col items-center gap-8 hover:shadow-md transition-shadow duration-300">
                 {/* Icon */}
                 <div className="shrink-0">
                   <img 
