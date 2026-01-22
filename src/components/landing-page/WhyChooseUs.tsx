@@ -6,132 +6,83 @@ import TimelyComplianceIcon from '../../assets/Image 1.svg';
 const WhyChooseUs: React.FC = () => {
   const cards = [
     {
-      icon: DomainIcon,
+      icon: TimelyComplianceIcon,
       title: 'Domain Expertise',
       description: 'We bring extensive EPR compliance experience across industries, backed by deep expertise in waste management regulations and compliance requirements.',
-      bgColor: '#36A46B',
-      textColor: '#FFFFFF',
-      iconColor: '#FFFFFF',
+      bgColor: '#57BE8B',
+      titleColor: '#1A1A1A',
+      descriptionColor: '#1A1A1A',
+      iconColor: '#1A1A1A',
     },
     {
       icon: TechDrivenIcon,
       title: 'Tech Driven',
       description: 'We are tech-first team of Chartered Accountants and Environmental Engineers delivering seamless, end-to-end EPR compliance solutions for sustainable business growth and success.',
       bgColor: '#FFFFFF',
-      textColor: '#57BE8B',
+      titleColor: '#57BE8B',
+      descriptionColor: '#57BE8B',
       iconColor: '#1A1A1A',
     },
     {
-      icon: TimelyComplianceIcon,
+      icon: DomainIcon,
       title: '100% on time compliance',
       description: 'We simplify EPR compliance through our reliable recycler network, ensuring timely and effective compliance for your business.',
       bgColor: '#2C2C2C',
-      textColor: '#FFFFFF',
-      iconColor: '#FFFFFF',
+      titleColor: '#FFFFFF',
+      descriptionColor: '#FFFFFF',
+      iconColor: '#57BE8B',
     },
   ];
 
   return (
-    <section className="bg-white py-12 md:py-16 w-full overflow-x-hidden">
+    <section className="bg-white pb-10 w-full overflow-x-hidden">
       <div 
-        className="bg-white flex flex-col w-full max-w-[1200px] mx-auto"
-        style={{ 
-          minHeight: '744px', 
-          padding: '40px',
-          gap: '48px'
-        }}
+        className="bg-white flex flex-col w-full"
       >
         {/* Header */}
-        <div className="flex flex-col items-center justify-center gap-4">
-          <h2 className="text-[#57BE8B] font-urbanist font-bold text-3xl md:text-4xl lg:text-[40px] text-center">
+        <div className="flex flex-col items-center justify-center gap-3 pb-12 px-10">
+          <h2 className="text-[#57BE8B] font-urbanist font-medium text-3xl md:text-4xl lg:text-[40px] text-center">
             Why Choose us as your compliance partner?
           </h2>
-          <p className="text-[#1A1A1A] font-urbanist text-base md:text-lg text-center max-w-4xl text-opacity-80">
+          <p className="text-[#1A1A1A] font-urbanist text-base md:text-lg text-center text-opacity-80">
             We are India's first comprehensive Extended Producer Responsibility (EPR) compliance platform, built to simplify, digitise, and scale EPR obligations for businesses of all sizes.
           </p>
         </div>
 
         {/* Cards Container with Wavy Lines */}
         <div 
-          className="relative flex flex-col lg:flex-row items-start justify-center w-full"
-          style={{ 
-            minHeight: '500px',
-            gap: '10px'
-          }}
+          className="relative flex flex-col lg:flex-row items-stretch justify-center w-full"
         >
-          {/* Wavy Line Background - SVG overlay positioned at icon level */}
-          <svg 
-            className="absolute top-0 left-0 w-full h-full pointer-events-none z-10"
-            style={{ minHeight: '500px' }}
-            viewBox="0 0 1200 500"
-            preserveAspectRatio="none"
-          >
-            {/* Wavy path connecting the three card icons - positioned at icon level (~120px from top) */}
-            <defs>
-              <linearGradient id="wavyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#36A46B" />
-                <stop offset="33%" stopColor="#36A46B" />
-                <stop offset="50%" stopColor="#FFFFFF" />
-                <stop offset="100%" stopColor="#FFFFFF" />
-              </linearGradient>
-            </defs>
-            {/* Wavy line path - passes through icon area, more pronounced wave */}
-            <path
-              d="M 200 120 Q 400 80, 600 120 Q 800 160, 1000 120"
-              stroke="url(#wavyGradient)"
-              strokeWidth="3"
-              fill="none"
-              strokeLinecap="round"
-            />
-          </svg>
-
           {/* Cards */}
           {cards.map((card, index) => (
             <div
               key={index}
-              className="relative z-20 flex flex-col"
-              style={{
-                width: '400px',
-                minHeight: '500px',
-                paddingTop: '40px',
-                paddingRight: '12px',
-                paddingBottom: '40px',
-                paddingLeft: '12px',
-                backgroundColor: card.bgColor,
-                borderRadius: '0px',
-                flexShrink: 0,
-              }}
+              className="relative z-20 py-10 flex flex-col w-[400px] bg-white border-0 shrink-0"
+              style={{ backgroundColor: card.bgColor }}
             >
               {/* Icon */}
-              <div className="flex items-center justify-start mb-6" style={{ position: 'relative', zIndex: 30 }}>
-                <div 
-                  style={{ 
-                    width: '80px', 
-                    height: '80px',
-                  }}
+              <div className="flex items-center justify-start mb-6">
+                <div
                 >
                   <img 
                     src={card.icon} 
                     alt={card.title}
                     className="object-contain w-full h-full"
-                    style={{ 
-                      filter: card.iconColor === '#FFFFFF' ? 'brightness(0) invert(1)' : card.iconColor === '#1A1A1A' ? 'brightness(0)' : 'none'
-                    }}
                   />
                 </div>
               </div>
 
               {/* Content */}
-              <div className="flex flex-col gap-4 flex-1">
+              <div className="flex flex-col gap-2 flex-1 px-4 text-center mt-[-160px]">
                 <h3 
-                  className="font-urbanist font-bold text-2xl md:text-3xl leading-tight"
-                  style={{ color: card.textColor }}
+                  className="font-urbanist font-semibold text-2xl md:text-3xl leading-tight text-center"
+                  style={{ color: card.titleColor }}
                 >
                   {card.title}
                 </h3>
                 <p 
                   className="font-urbanist text-base md:text-lg leading-relaxed"
-                  style={{ color: card.textColor }}
+                  style={{ color: card.descriptionColor }}
                 >
                   {card.description}
                 </p>
