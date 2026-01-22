@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #50b686;
+  --color-brand-dark: #333333;
+  --color-brand-light-green: #e9f7f0;
+  
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-outfit: "Outfit", system-ui, sans-serif;
+  --font-urbanist: "Urbanist", system-ui, sans-serif;
+}
+
+:root {
+  font-family: var(--font-inter);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-brand-dark);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit);
+}
+
+.nav-link {
+  @apply text-brand-dark hover:text-brand-green font-medium transition-colors duration-200 flex items-center gap-1 cursor-pointer;
+}
+
+.btn-primary {
+  @apply bg-brand-green text-white px-6 py-2 rounded-md hover:opacity-90 transition-all font-semibold flex items-center justify-center;
+}

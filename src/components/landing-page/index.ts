@@ -1,0 +1,9 @@
+export { default as Navbar } from './Navbar';
+export { default as Hero } from './Hero';
+export { default as TrustedByClients } from './TrustedByClients';
+export { default as WhoAreWe } from './WhoAreWe';
+export { default as PurchaseCredits } from './PurchaseCredits';
+export { default as WhyChooseUs } from './WhyChooseUs';
+export { default as ContactUs } from './ContactUs';
+export { default as Footer } from './Footer';
+export { default as LandingPage } from './LandingPage';
