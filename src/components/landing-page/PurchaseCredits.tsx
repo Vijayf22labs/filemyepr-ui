@@ -23,11 +23,11 @@ const PurchaseCredits: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white py-12 md:py-16 flex items-center justify-center px-6">
-      <div className="max-w-[1200px] w-full h-[604px] bg-white flex flex-col gap-6">
+    <section className="bg-white p-10 flex items-center justify-center">
+      <div className="bg-white flex flex-col gap-6">
         {/* Header */}
-        <div className="flex flex-col items-center justify-center gap-3" style={{ width: '1120px', height: '88px', margin: '0 auto' }}>
-          <h2 className="text-[#57BE8B] font-urbanist font-semibold text-center" style={{ fontSize: '40px', lineHeight: '48px', letterSpacing: '0%' }}>
+        <div className="flex flex-col items-center justify-center gap-3">
+          <h2 className="text-[#57BE8B] font-urbanist font-medium text-center" style={{ fontSize: '40px', lineHeight: '48px', letterSpacing: '0%' }}>
             Purchase Credits
           </h2>
           <p className="text-[#1A1A1A] font-urbanist text-base md:text-lg text-opacity-80 text-center">
@@ -36,7 +36,7 @@ const PurchaseCredits: React.FC = () => {
         </div>
 
         {/* Cards Container */}
-        <div className="flex flex-col lg:flex-row items-center justify-center flex-1 gap-[78px] px-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center flex-1 gap-4 px-10">
           {steps.map((step, index) => (
             <React.Fragment key={index}>
               {/* Card */}
@@ -52,11 +52,11 @@ const PurchaseCredits: React.FC = () => {
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col gap-4 items-center text-center flex-1">
-                  <h3 className="text-[#57BE8B] font-urbanist font-bold text-lg md:text-xl whitespace-nowrap">
+                <div className="flex flex-col gap-2 items-center text-center flex-1">
+                  <h3 className="text-[#57BE8B] font-urbanist font-medium text-lg md:text-2xl whitespace-nowrap">
                     {step.title}
                   </h3>
-                  <p className="text-[#1A1A1A] font-urbanist text-sm md:text-base text-opacity-80">
+                  <p className="text-[#1A1A1A] font-urbanist text-sm md:text-xl leading-[28px]">
                     {step.description}
                   </p>
                 </div>
@@ -66,9 +66,9 @@ const PurchaseCredits: React.FC = () => {
               {index < steps.length - 1 && (
                 <div className="hidden lg:flex items-center justify-center">
                   <svg 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
+                    width="60" 
+                    height="32" 
+                    viewBox="0 0 60 32" 
                     fill="none" 
                     xmlns="http://www.w3.org/2000/svg"
                     className="text-[#1A1A1A]"
@@ -76,16 +76,16 @@ const PurchaseCredits: React.FC = () => {
                     {/* Arrow shaft */}
                     <line 
                       x1="2" 
-                      y1="12" 
-                      x2="18" 
-                      y2="12" 
+                      y1="16" 
+                      x2="50" 
+                      y2="16" 
                       stroke="currentColor" 
                       strokeWidth="2.5" 
                       strokeLinecap="round"
                     />
                     {/* Arrowhead */}
                     <path 
-                      d="M18 12L14 8M18 12L14 16" 
+                      d="M50 16L42 8M50 16L42 24" 
                       stroke="currentColor" 
                       strokeWidth="2.5" 
                       strokeLinecap="round" 
@@ -99,18 +99,9 @@ const PurchaseCredits: React.FC = () => {
         </div>
 
         {/* View Store Button */}
-        <div className="flex justify-center" style={{ marginTop: '24px' }}>
+        <div className="flex justify-center mt-6">
           <button 
-            className="bg-[#57BE8B] hover:bg-[#4da87b] text-white font-urbanist font-bold text-base md:text-lg transition-colors duration-200"
-            style={{
-              width: '310px',
-              height: '56px',
-              paddingTop: '16px',
-              paddingRight: '32px',
-              paddingBottom: '16px',
-              paddingLeft: '32px',
-              borderRadius: '6px'
-            }}
+            className="bg-[#57BE8B] hover:bg-[#4da87b] text-white font-urbanist font-bold text-base md:text-lg transition-colors duration-200 w-full max-w-[310px] px-6 py-4 rounded-md cursor-pointer"
           >
             View Store
           </button>
